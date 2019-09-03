@@ -1,0 +1,22 @@
+{
+  "name": "file_mng_backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/VictorAlmeida52/file_mng.git",
+  "author": "Victor Almeida <victor.almeida@selens.com.br>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.11",
+    "multer": "^1.4.2",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  }
+}
