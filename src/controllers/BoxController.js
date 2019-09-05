@@ -2,9 +2,9 @@ const Box = require("../models/Box");
 
 class BoxController {
   async store(req, res) {
-    const box1 = await Box.findOne({ title: req.body.title });
+    const box_find = await Box.findOne({ title: req.body.title });
 
-    if (box1) {
+    if (box_find) {
       return res.json(box1);
     } else {
       const box = await Box.create(req.body);
